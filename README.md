@@ -35,9 +35,6 @@
         <li>Increased Complexity</li>
     </ul>
 
- <h2>Output</h2>
-    <p>Error: Division by zero error</p>
-
  <h2>Algorithms</h2>
     <ol>
         <li>Identify critical code where exceptions may occur.</li>
@@ -48,15 +45,43 @@
     </ol>
 
  <h2>Code to Handle Division by Zero</h2>
+<h1>Algorithm for Handling Division by Zero Exception</h1>
 
- <h2>Output</h2>
-    <p>
-        Enter the values of 1 & 2: <br>
-        8 0 <br>
-        ERROR: Division by 0 <br>
-        Enter the values of 1 & 2: <br>
-        8 4 <br>
-        Answer = 2
-    </p>
+<h2>1. Start:</h2>
+    <p>Begin the program.</p>
+
+ <h2>2. Input:</h2>
+    <p>Prompt the user to enter two float values (<code>n1</code> and <code>n2</code>).</p>
+
+ <h2>3. Try Block:</h2>
+ <ol>
+        <li>Check if the second value (<code>n2</code>) is equal to zero.
+            <ul>
+                <li>If <strong>true</strong>:
+                    <ol>
+                        <li><strong>Throw Exception</strong>: Signal an exception with the value of <code>n2</code>.</li>
+                    </ol>
+                </li>
+                <li>If <strong>false</strong>:
+                    <ol>
+                        <li>Calculate the division: <code>ans = n1 / n2</code>.</li>
+                        <li>Display the result: Print <code>"Answer = "</code> followed by the value of <code>ans</code>.</li>
+                    </ol>
+                </li>
+            </ul>
+        </li>
+    </ol>
+
+<h2>4. Catch Block:</h2>
+    <ol>
+        <li>If an exception is thrown:
+            <ol>
+                <li>Catch the exception and store it in a variable (<code>num</code>).</li>
+                <li>Display an error message: Print <code>"ERROR: Division by "</code> followed by the value of <code>num</code>.</li>
+            </ol>
+        </li>
+    </ol>
+
+<h2>5. End:</h2>
 </body>
 </html>
