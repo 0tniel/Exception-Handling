@@ -83,5 +83,28 @@
     </ol>
 
 <h2>5. End:</h2>
+<h1>Age Verification Program with Exception Handling</h1>
+
+<h2>Algorithm</h2>
+    <ol>
+        <li><strong>Start</strong></li>
+        <li>Declare an integer variable <code>age</code>.</li>
+        <li>Display a message to the user: <code>"Enter age:"</code>.</li>
+        <li>Input the value of <code>age</code> from the user.</li>
+        <li>Use a <code>try</code> block to check if the user is underage:
+            <ul>
+                <li>If <code>age &lt; 18</code>, throw the value of <code>age</code> as an exception.</li>
+                <li>Otherwise, print the value of <code>age</code> and display the message <code>"APPROVED!"</code>.</li>
+            </ul>
+        </li>
+        <li>In the <code>catch</code> block:
+            <ul>
+                <li>Catch the exception (the underage value).</li>
+                <li>Print an error message indicating the user is underage along with the age value.</li>
+            </ul>
+        </li>
+        <li><strong>End</strong></li>
+    </ol>
+
 </body>
 </html>
